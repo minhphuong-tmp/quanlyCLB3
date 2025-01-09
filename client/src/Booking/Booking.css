@@ -1,0 +1,90 @@
+/* Đảm bảo modal luôn hiển thị */
+/* @import "~bootstrap/dist/css/bootstrap.min.css"; */
+
+.modal.fade.show {
+    display: block !important;
+    /* Đảm bảo modal hiển thị */
+    position: fixed;
+    /* Cố định vị trí */
+    top: 40%;
+    /* Căn giữa theo chiều dọc */
+    left: 50%;
+    /* Căn giữa theo chiều ngang */
+    transform: translate(-50%, -50%);
+    /* Di chuyển để căn giữa hoàn hảo */
+    z-index: 1050;
+    /* Đảm bảo modal không bị che khuất */
+    opacity: 1;
+    /* Đảm bảo không bị ẩn */
+    visibility: visible !important;
+    /* Đảm bảo modal không bị ẩn */
+
+    /* Giới hạn chiều rộng và chiều cao của modal */
+    width: auto;
+    /* Để auto chiều rộng theo nội dung */
+    max-width: 80%;
+    /* Giới hạn chiều rộng của modal */
+    max-height: 80%;
+    overflow: hidden;
+    padding: 100px;
+
+    /* Thêm khoảng cách xung quanh modal */
+    overflow-y: auto;
+    height: 100%;
+
+}
+
+.modal-backdrop {
+    display: none !important;
+}
+
+.modal-content {
+
+    overflow-y: auto;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    /* Đảm bảo các button được căn đều */
+    gap: 15px;
+
+
+    /* Khoảng cách giữa các button */
+    padding: 10px 20px;
+}
+
+.modal-footer button {
+    width: 80px;
+    /* Cố định chiều rộng của nút */
+    height: 40px;
+    /* Cố định chiều cao của nút */
+    padding: 0;
+    /* Đảm bảo không có thêm padding làm phồng nút */
+    flex-shrink: 0;
+    /* Ngăn nút co lại hoặc phồng lên */
+    display: flex;
+    align-items: center;
+    /* Căn giữa nội dung nút */
+    justify-content: center;
+    /* Căn giữa nội dung nút */
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* Cột tự động thay đổi */
+    gap: 20px;
+    /* Khoảng cách giữa các phần tử */
+
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+}
