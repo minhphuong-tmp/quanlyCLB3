@@ -53,13 +53,12 @@ class Selectbar extends Component {
             <div className="Select-bar-container">
                 <div className="search-icon" title='add friend' onClick={this.toggleSearchUser}>
                     <i className="fa-solid fa-magnifying-glass"></i>
-                </div>
-                <div className="message-container">
-                    <div className="message">Cuộc trò chuyện</div>
-                    <div className="conservation">Tin nhắn</div>
+
                 </div>
 
-                {openSearchUser && <SearchUser onClose={this.toggleSearchUser} onUserSelect={onUserSelect} />}
+                <div className='search-user'>
+                    {openSearchUser && <SearchUser onClose={this.toggleSearchUser} onUserSelect={onUserSelect} />}  
+                </div>
             </div>
         );
     }

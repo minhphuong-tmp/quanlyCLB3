@@ -363,7 +363,7 @@ class NavBar extends Component {
 
               <li
                 className='profile'
-                className={
+                className = {
                   (chooseProfile ? "home" : "") +
                   (role === "student" ? "" : "student")
                 }
@@ -407,7 +407,7 @@ class NavBar extends Component {
                 onClick={this.chooseChat}>
                 <Link to='/home/chat'>
                   <div className='icon'>
-                    <span className='fa fa-comment-dots'></span>
+                    <span className='fa-regular fa-comment-dots'></span>
                   </div>
                   <span className='links_name'>Chat</span>
 

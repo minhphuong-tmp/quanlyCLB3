@@ -35,83 +35,12 @@ export default function BookingComponent(props) {
             <div className="bookingpost-container">
 
                 <h3>Sự kiện số  {props.eventNumber} </h3>
-                {/* <div className="bookingpost-group">
-                    <label>Tên sự kiện</label>
-                    <input
-                        className="bookingpost-control"
-                        type="eventname"
-                        placeholder="Tên sự kiện"
-                        value={props.eventname}
-
-                    >
-
-                    </input>
-
-                </div>
-                <div className="bookingpost-group">
-                    <label>Địa điểm</label>
-                    <input className="bookingpost-control"
-
-                        type="location"
-                        placeholder="Địa điểm tổ chức"
-                        value={props.location}
-
-                    >
-
-
-                    </input>
-
-                </div>
-                <div className="bookingpost-group">
-                    <label>Thời gian</label>
-                    <input
-                        className="bookingpost-control"
-                        type="time"
-                        placeholder="Thời gian tổ chức"
-                        value={props.time}
-                    >
-
-
-                    </input>
-
-                </div>
-                <div className="bookingpost-group">
-                    <label>Ngày</label>
-                    <input
-
-                        className="bookingpost-control"
-                        type="date"
-                        placeholder="Ngày tổ chức"
-                        value={props.date}
-
-                    ></input>
-
-                </div>
-                <div className="bookingpost-group">
-                    <label>Số lượng</label>
-                    <input
-                        className="bookingpost-control"
-                        type="count"
-                        placeholder="Số lượng người"
-                        value={props.count}
-
-                    ></input>
-
-                </div>
-                <div className="bookingpost-group">
-                    <label>Chú ý</label>
-                    <input
-                        className="bookingpost-control"
-                        type="note"
-                        placeholder="Ghi chú"
-                        value={props.note}
-
-                    ></input>
-
-                </div> */}
+            
                 <table className="table">
                     <tr>
-                        <td style={{ width: "100px" }}>
+                        <td
+                        className="table-title"
+                        style={{ width: "100px" }}>
                             Tên sự kiện
 
                         </td>
@@ -124,7 +53,9 @@ export default function BookingComponent(props) {
 
 
                     <tr>
-                        <td style={{ width: "100px" }}>
+                        <td
+                        className="table-title"
+                        style={{ width: "100px" }}>
                             Địa điểm
 
                         </td>
@@ -136,7 +67,9 @@ export default function BookingComponent(props) {
                     </tr>
 
                     <tr>
-                        <td style={{ width: "100px" }}>
+                        <td
+                        className="table-title"
+                        style={{ width: "100px" }}>
                             Thời gian
 
                         </td>
@@ -147,7 +80,9 @@ export default function BookingComponent(props) {
 
                     </tr>
                     <tr>
-                        <td style={{ width: "100px" }}>
+                        <td
+                        className="table-title"
+                        style={{ width: "100px" }}>
                             Ngày
 
                         </td>
@@ -158,7 +93,9 @@ export default function BookingComponent(props) {
 
                     </tr>
                     <tr>
-                        <td style={{ width: "100px" }}>
+                        <td
+                        className="table-title"
+                        style={{ width: "100px" }}>
                             Số lượng
 
                         </td>
@@ -169,7 +106,9 @@ export default function BookingComponent(props) {
 
                     </tr>
                     <tr>
-                        <td style={{ width: "100px" }}>
+                        <td
+                        className="table-title"
+                        style={{ width: "100px" }}>
                             Chú ý
 
                         </td>
