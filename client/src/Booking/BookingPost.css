@@ -1,35 +1,21 @@
- .header-booking {
-     color: #e63946;
-     /* Màu đỏ dịu */
-     font-size: 2.5rem;
-     /* Kích thước lớn hơn */
-     font-weight: bold;
-     text-transform: uppercase;
-     /* Chuyển chữ hoa */
-     letter-spacing: 1.5px;
-     /* Khoảng cách giữa các chữ */
-     margin: 0;
-     width: 100%;
-     /* Xóa khoảng cách mặc định */
-     text-align: center;
- }
-
- .header-booking h1 {}
-
  .bookingpost-parentcontainer-parent {
      flex-wrap: wrap;
      display: flex;
-     gap: 20px;
      padding-left: 10px;
 
  }
 
  .bookingpost-parentcontainer {
-     display: flex !important;
+     display: flex;
      border: 1px solid black;
+     border-radius: 4px;
      padding: 10px;
+     margin: 10px;
+    background-color: rgb(255, 191, 185);
+ }
 
-
+ .bookingpost-parentcontainer .bookingpost-container .table .table-title{
+    font-weight: bold;
  }
 
  .bookingpost-container {
@@ -41,8 +27,6 @@
      /* display: inline; */
      /* display: flex;  */
      /* display: flex; */
-
-
  }
 
  .bookingpost-parentcontainer .bookingpost-container .bookingpost-group {
@@ -54,8 +38,15 @@
 
  }
 
- .bookingpost-parentcontainer .bookingpost-container .button {
-     border: 1px solid red;
+ .bookingpost-parentcontainer .bookingpost-container button {
+        align-items: center;
+        width: fit-content;
+        height: 30px;
+        margin: 4px;
+        padding: 6px;
+        background-color: rgb(218, 142, 0);
+        border: 1px solid rgb(110, 110, 110);
+        border-radius: 8px;
  }
 
  .table {

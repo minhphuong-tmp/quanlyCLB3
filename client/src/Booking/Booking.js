@@ -7,7 +7,6 @@ import BookingComponent from "./BookingComponent";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 
-import './BookingPost.css'
 export default function Booking() {
     const [modal, setModal] = useState(false);
     const toggle = () => setModal(!modal);
@@ -72,13 +71,14 @@ export default function Booking() {
 
 
     return (
-        <div>
+        <div className="booking-container">
             <div className="header-booking">
                 <h1 >Hội thảo CLB Tin Học KMA</h1>
             </div>
 
             {(userid2) === "671636fd26dc9f54ebce8992" && (
                 <Button
+                    className="booking-button"
                     color="danger"
                     onClick={toggle}
                 >
