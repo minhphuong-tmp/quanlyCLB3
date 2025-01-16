@@ -380,12 +380,6 @@ class NavBar extends Component {
 
 
 
-
-
-
-
-
-
               <li
                 className={choosePost ? "home" : ""}
                 onClick={this.choosePost}>

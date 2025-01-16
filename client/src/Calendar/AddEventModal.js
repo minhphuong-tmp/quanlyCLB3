@@ -7,8 +7,8 @@ export default function ({ isOpen, onClose, onEventAdded }) {
     const [title, setTitle] = useState("");
     const [start, setStart] = useState(new Date());
     const [end, setEnd] = useState(new Date());
-  
-  
+
+
 
     const onSubmit = (event) => {
         event.preventDefault();
@@ -47,11 +47,27 @@ export default function ({ isOpen, onClose, onEventAdded }) {
 
                 </div>
 
-                {/* 
-                {userid2 === "671636fd26dc9f54ebce8992" ? (
-                    <button>
-                        Add event
-                    </button> 
+                <button
+                    style={{
+                        marginLeft: '5px',
+                        backgroundColor: 'rgb(236, 139, 122)', // Màu nền xanh
+                        color: '#fff', // Màu chữ trắng
+                        border: 'none', // Loại bỏ viền
+                        borderRadius: '5px', // Bo góc
+                        padding: '10px 20px', // Khoảng cách bên trong nút
+                        fontSize: '16px', // Kích thước chữ
+                        cursor: 'pointer', // Hiệu ứng con trỏ khi hover
+                        boxShadow: 'rgb(236, 139, 122)', // Đổ bóng cho nút
+                        transition: 'background-color 0.3s ease', // Hiệu ứng chuyển màu nền khi hover
+                        marginTop: '10px', // Khoảng cách phía trên
+                        width: '180px', // Đặt chiều rộng của nút
+                        textAlign: 'center', // Canh giữa chữ trong nút
+                        fontWeight: 'bold' // Đặt chữ đậm
+                    }}>
+                    Add event
+                </button>
+                {/* {userid2 === "671636fd26dc9f54ebce8992" ? (
+                  
                 ) : null} */}
 
             </form>

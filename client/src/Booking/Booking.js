@@ -6,7 +6,6 @@ import { useHistory } from 'react-router-dom';
 import BookingComponent from "./BookingComponent";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
-
 export default function Booking() {
     const [modal, setModal] = useState(false);
     const toggle = () => setModal(!modal);
@@ -52,8 +51,8 @@ export default function Booking() {
         } else {
             console.log("loi")
         }
-
-
+        // const [reload, setReload] = useState(false);
+        // setReload(!reload);
     }
 
 
@@ -196,6 +195,7 @@ export default function Booking() {
                         color="primary"
                         onClick={(ev) => {
                             createEvent({ eventname, location, time, date, count, note });
+                            window.location.reload();
                             toggle(); // Đóng modal sau khi xác nhận
                         }}>
                         Xác nhận

@@ -235,7 +235,7 @@ class Login extends Component {
           <Container>
             <App_logo_container>
               <App_logo src={AppLogo} />
-              <Comment>Hệ thống hỗ trợ trong hoạt động CLB CNTT</Comment>
+              <Comment>Hệ thống hỗ trợ trong hoạt động CLB Tin Học KMA</Comment>
               <Comment1></Comment1>
               <Comment2>Học viện kỹ thuật Mật Mã - KMA</Comment2>
             </App_logo_container>

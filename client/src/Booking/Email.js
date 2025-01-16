@@ -11,13 +11,15 @@ export default function Email({ toggle, modal, eventDetails }) {
     const [name, setName] = useState('');
     const history = useHistory();
 
-    const sendEmail = async (name, email, eventname, count) => {
+    const sendEmail = async (name, email, eventname, time, date, note, count) => {
         const data = {
             eventname: eventname,
             name: name,
             email: email,
+            time: time,
+            date: date,
+            note: note,
         };
-
 
         const response = await fetch('http://localhost:5000/sendEmail', {
             method: 'POST',
@@ -37,9 +39,6 @@ export default function Email({ toggle, modal, eventDetails }) {
         } else {
             console.log("loi")
         }
-
-
-
 
     }
 
@@ -92,7 +91,7 @@ export default function Email({ toggle, modal, eventDetails }) {
                     <input
                         className="form-control"
                         type="name"
-                        placeholder="Họ và tên"
+                        placeholder="Thời gian"
                         value={eventDetails.props.time || ''}
                         readOnly
                     // value={e}
@@ -104,7 +103,7 @@ export default function Email({ toggle, modal, eventDetails }) {
                     <input
                         className="form-control"
                         type="name"
-                        placeholder="Họ và tên"
+                        placeholder="Ngày"
                         value={eventDetails.props.date || ''}
                         readOnly
                     // value={eventname}
@@ -137,7 +136,7 @@ export default function Email({ toggle, modal, eventDetails }) {
                 </div>
             </ModalBody>
             <ModalFooter>
-                <Button color="primary" onClick={() => sendEmail(name, email, eventDetails.props.eventname, eventDetails.props.count)}>
+                <Button color="primary" onClick={() => sendEmail(name, email, eventDetails.props.eventname, eventDetails.props.time, eventDetails.props.date, eventDetails.props.note, eventDetails.props.count)}>
                     Xác nhận
                 </Button>{' '}
                 <Button color="secondary" onClick={toggle}>

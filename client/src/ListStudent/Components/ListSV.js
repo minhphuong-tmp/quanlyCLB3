@@ -86,7 +86,7 @@ class ListSV extends Component {
         });
       }
       if (filter.status) {
-        students = students.filter((student) => {
+        students = students.filter((student) => { //lọc ra  mảng students  theo yêu cầu bên trong 
           if (filter.status === "all") return true;
           else return student.status === filter.status;
         });
@@ -116,7 +116,7 @@ class ListSV extends Component {
         });
       }
     }
-    var studentList = students.map((student, index) => {
+    var studentList = students.map((student, index) => { //hiển thị danh sách ở dưới 
       return (
         <OneRowData
           key={student.id}
@@ -129,7 +129,9 @@ class ListSV extends Component {
     return (
       <div>
         <table className="table table-bordered table-hover">
-          <Sort onSort={this.onSort} />
+        {/* sắp xếp theo input */}
+          <Sort onSort={this.onSort} />  
+      
 
           <tbody>
             <tr>

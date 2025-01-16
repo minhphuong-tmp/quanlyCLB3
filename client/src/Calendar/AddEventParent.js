@@ -83,11 +83,11 @@ export default function AddEventParent() {
                         boxShadow: 'rgb(236, 139, 122)', // Đổ bóng cho nút
                         transition: 'background-color 0.3s ease', // Hiệu ứng chuyển màu nền khi hover
                         marginTop: '10px', // Khoảng cách phía trên
-                        width: '150px', // Đặt chiều rộng của nút
+                        width: '180px', // Đặt chiều rộng của nút
                         textAlign: 'center', // Canh giữa chữ trong nút
                         fontWeight: 'bold' // Đặt chữ đậm
                     }}
-                    onClick={() => setModalOpen(true)}>Add event
+                    onClick={() => setModalOpen(true)}>Thêm lịch hẹn
 
                 </button>
             )
