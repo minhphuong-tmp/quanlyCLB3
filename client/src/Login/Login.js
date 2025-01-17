@@ -15,6 +15,7 @@ const Body = styled.div`
   height: 100vh;
 `;
 const Container = styled.div`
+  justify-content: space-evenly;
   width: 100%;
   display: flex;
 `;
@@ -85,7 +86,7 @@ const Form = styled.form`
 `;
 const Input_container = styled.div`
   padding: 0 0 25px 0;
-   margin-left:2px;  /* Dịch toàn bộ Input_container sang phải 10px */
+   margin-left:2px;
   display: flex;
   align-items: center;
   
@@ -97,9 +98,9 @@ const Uet_logo = styled.img`
   margin-top: 20px;
 `;
 const App_logo = styled.img`
-  width: 700px;
-  height: 350px;
-  margin-top: -100px;
+  width: 500px;
+  height: 500px;
+  margin-top: -150px;
   margin-left: -20px
 `;
 const App_logo_container = styled.div`
